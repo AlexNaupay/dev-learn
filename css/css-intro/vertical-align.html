@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Vertical Align</title>
+    <style>
+        figure{
+            border:1px red solid;
+            height:250px;
+        }
+
+        img#tiffany{
+            height: 200px;
+            vertical-align: middle;
+            /*z-index: 1;*/
+        }
+        img#megan{
+            /*height:100px;*/
+            -webkit-transform:translate(-38px,0px);
+            transform:translate(-38px,0px);
+            vertical-align: middle;
+            z-index: -1;
+            position:relative;
+
+        }
+        img{
+            border: red solid 1px;
+            display:inline-block;
+        }
+        p{
+            display:inline-block;
+            vertical-align:middle;
+            border:1px blue solid;
+
+            /*vertical-align: middle;
+            height: 70px;
+            float:right;*/
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img id="tiffany" src="05Tiffany.jpg" alt="Tiffany"/>
+        <img id="megan" src="08megan.png" alt="Megan"/>
+        <!--<figcaption>Hola Mundo!!!</figcaption>-->
+        <p>Megan Fox<p>
+
+    </figure>
+
+    <h4><samp>vertical-align: middle;</samp></h4>
+    <ul>
+        <li>Los elementos deben tener <samp>display:inline; | display:inline-block;</samp></li>
+        <li>Los elementos no deben estar flotando</li>
+    </ul>
+</body>
+</html>

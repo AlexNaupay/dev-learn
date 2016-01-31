@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Atributos de style</title>
+    <!--<link rel="stylesheet" href="01Style.css"/>-->
+    <style>
+        body{
+            background-color: gray;
+            font-size: 16px;
+        }
+    </style>
+    <style media="screen and (max-width:520px)">
+        body{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body >
+    <h1>Varias formas de indicar responsive design</h1>
+    <ol>
+        <li>En la hoja de estilos: @media screen and (max-width:420px){...}</li>
+        <li>En atributo de la etiqueta style:media="screen and max-width:420px" </li>
+        <li>En atributo media de &#60link&#62: media="screen and max-width:420px" </li>
+
+        <h3>Y no olvidar: &#60meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1"&#62</h3>
+    </ol>
+</body>
+</html>

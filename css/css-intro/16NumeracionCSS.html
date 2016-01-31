@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Numeracion</title>
+    <style>
+        body{
+            counter-reset: conta 0;
+        }
+        p:before{
+            counter-increment: conta 1;
+            content: counter(conta) ") ";
+        }
+    </style>
+<body>
+<p>Hola</p>
+
+<p>Mundo</p>
+
+<p>que tal</p>
+</body>
+</html>

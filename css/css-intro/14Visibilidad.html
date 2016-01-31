@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Visibilidad</title>
+    <style>
+        p#p1{
+            width: 300px;
+            height: 40px;
+            border: 1px solid green;
+            overflow-y: scroll;
+            overflow-style:move;
+        }
+        p#p2{
+            visibility: hidden; /* Deja un 'hueco'*/
+            /*display: none;*/ /* No deja un 'hueco'*/
+            border: 1px solid red;
+        }
+        p#p3{
+            /*visibility: hidden;*/
+            border: 1px solid red;
+        }
+        div{
+            height: 200px;
+            position: fixed;
+            width: 300px;
+            text-align: center;
+            border: 1px solid peru;
+            clip: rect(0px,3000px,70px,0px);
+
+        }
+        div p{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">Hola mundo kjdhksdfhkj ksjdhf ghdf jhsgdf jh
+       skjdfksjhdf sdjfhsd jsdhf jhsdgf jhdf hsdf jhsd
+       lsdfk kdsb jkhsd jks jhsd kj,n  jhgdj hdfhbs jhv
+        jdsfh skjdf ksdh jksdh hjsdf kjhsdbf jhsdf jhdf
+        ldjfhks sdhf ksdjhf kjhdsfmn klsdf skdf,msbd sdgfkjsd
+        jdhklf  kljsdhfs dkjds lkjsdbfmns dlk ihsdf m shsd
+        lkjdsfhk isdfbm   lkñjflk fl bnfiu  lkjfdg lk fg vldg
+        ljsdfhskljfbh kljsdfgskmd fshdf,m sdihbd   fbdsbf sdfj.
+    </p>
+
+    <p id="p2">Holaaaa Mundo!!!</p>
+
+    <p id="p3">Hola3</p>
+
+
+    <div>
+        <p>Hola mundo kjdhksdfhkj ksjdhf ghdf jhsgdf jh
+            skjdfksjhdf sdjfhsd jsdhf jhsdgf jhdf hsdf jhsd
+            lsdfk kdsb jkhsd jks jhsd kj,n  jhgdj hdfhbs jhv
+            jdsfh skjdf ksdh jksdh hjsdf kjhsdbf jhsdf jhdf
+            ldjfhks sdhf ksdjhf kjhdsfmn klsdf skdf,msbd sdgfkjsd
+            jdhklf  kljsdhfs dkjds lkjsdbfmns dlk ihsdf m shsd
+            lkjdsfhk isdfbm   lkñjflk fl bnfiu  lkjfdg lk fg vldg
+            ljsdfhskljfbh kljsdfgskmd fshdf,m sdihbd   fbdsbf sdfj.
+        </p>
+    </div>
+</body>
+</html>

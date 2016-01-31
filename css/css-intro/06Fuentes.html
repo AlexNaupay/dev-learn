@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formato de fuente</title>
+    <style>
+        body{
+            font-size: 16px;
+            background: deepskyblue url(05Tiffany.jpg) no-repeat center top;
+        }
+        #p1{
+            font-size: xx-small;
+            font-weight: bold;
+        }
+        span#letrax{
+            font-size: larger;/* Letra de acuerdo a su padre */
+            background-color: #f58b55;
+        }
+        #p2{
+            font-size: x-small;
+            font-style: italic;
+        }
+        #p3{
+            font-size: small;
+        }
+        #pd{
+            font-size: 1em;
+        }
+        #p4{
+            font-size:medium;
+        }
+        #p5{
+            font-size: large;
+        }
+        #p6{
+            font-size: x-large;
+            text-transform: capitalize;
+        }
+        span#letra0{
+            font-size: smaller;/* Letra de acuerdo a su padre */
+            background-color: #f58b55;
+            vertical-align: top;
+        }
+        #p7{
+            font-size: xx-large;
+            text-shadow: rgba(255, 39, 12, 0.6) 5px 3px 1px;
+        }
+        span#letra{
+            font-size: 1em;/* Letra de acuerdo a su padre */
+            background-color: #f58b55;
+            vertical-align: top;
+            font-variant:  small-caps;/*Mayúsculas del tamaño de las minúsculas*/
+        }
+        div{
+            border:1px solid;
+            height: 200px;
+            width:200px;
+            margin-bottom: 1em;
+        }
+        div#div1>p{
+            background:whitesmoke;
+            color: coral;
+            text-align: center;
+            line-height: 50px;
+        }
+        div#div2{
+            height: 60px;
+            /*overflow: hidden;*/
+        }
+        div#div2>p{
+            border:1px solid red;
+            margin: 0;
+            width: 200px;
+            text-indent: 2em;
+            height: 50px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">Tamaño <span id="letrax">Larger </span> absoluto xx-small</p>
+    <p id="p2">Tamaño absoluto x-small</p>
+    <p id="p3">Tamaño absoluto small</p>
+    <p id="pd">Tamaño por defecto: 16px</p>
+    <p id="p4">Tamaño absoluto medium</p>
+    <p id="p5">Tamaño absoluto large</p>
+    <p id="p6">Tamaño absoluto <span id="letra0">Letra </span> x-large</p>
+    <p id="p7">Tamaño <span id="letra">Letra</span> ABSOLUTO xx-large</p>
+
+    <div id="div1">
+        <p>Hola este es un texto de muchas lineas,
+            muchas, muchas.
+        </p>
+    </div>
+
+    <div id="div2">
+        <p>Hola este es un texto de muchas lineas,
+            muchas,jojoo como es de grande este texto
+            carajo ajo ajo ajo.
+        </p>
+    </div>
+</body>
+</html>

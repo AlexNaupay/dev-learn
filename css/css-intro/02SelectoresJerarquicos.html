@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selectores</title>
+    <style>
+        section * * *{
+            color:red;
+        }
+
+        /*section[id^="s-"]{
+            border:solid 1px red;
+            margin-top: 1em;
+        }*/
+
+        /*section p{
+            color:blue;
+        }*/
+
+        /*section>p{
+            color:green;
+        }*/
+
+        /*p+article{
+            color:peru;
+        }*/
+
+        /*article+p{
+            color:aqua;
+        }*/
+
+        /*p#p1 ~ h4{
+            color:magenta;
+        }*/
+
+        /*section:last-child{
+            color:blueviolet;
+        }*/
+
+        /*section:last-of-type{
+            color:navajowhite;
+        }*/
+
+
+
+
+    </style>
+</head>
+<body>
+    <section id="s-padre1">
+        <p id="p1">Soy hijo1 de <strong>section1</strong></p>
+        <h3>Soy hijo gordo1 de section1</h3>
+        <article id="hijo">
+            <p>Soy nieto de <strong>section1</strong></p>
+            <article id="nieto">
+                <p>Soy bisnieto de <strong>section1</strong></p>
+            </article>
+        </article>
+        <h4>Soy hijo gordo2 de section1</h4>
+        <p>Soy hijo2 de <strong>section1</strong></p>
+    </section>
+
+    <section id="s-padre2">
+        <p>Soy hijo2 de <strong>section2</strong></p>
+        <article id="hijo2">
+            <p>Soy nieto2 de <strong>section2</strong></p>
+            <article id="nieto2">
+                <p>Soy bisnieto2 de <strong>section2</strong></p>
+            </article>
+        </article>
+    </section>
+
+    <section id="padre3">
+        <p>Soy hijo2 de <strong>section3</strong></p>
+        <article id="hijo3">
+            <p>Soy nieto2 de <strong>section3</strong></p>
+            <article id="nieto3">
+                <p>Soy bisnieto2 de <strong>section3</strong></p>
+            </article>
+        </article>
+    </section>
+
+    <h6>Estoy estorbando</h6>
+    <h1>Descomentar para ver selecciones ..</h1>
+</body>
+</html>

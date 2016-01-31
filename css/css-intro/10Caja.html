@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="normalize.css"/>
+    <title>Modelo de caja</title>
+    <style>
+        body{
+            background: #d0ff7f;
+            border: 5px solid white;
+        }
+        div#div1{
+            border: 2px solid red;
+            margin: 0;
+        }
+
+        div#div1 p{
+            background-color: deepskyblue;
+            border: 5px solid #ff934a;
+            padding: 5px;
+            margin: 5px;
+            width: 500px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        div#imagen{
+            /*height: 200px;*/
+        }
+        div#imagen figure{
+            background-color: coral;
+            display: inline-block;
+            box-shadow: orangered -5px 0 3px, #416fff 5px 0 8px;
+            /*box-shadow : inset 0  12px   15px  -4px rgba( 31 ,  73 ,  125 ,  0.8 ), inset 0  -12px   8px  -4px rgba( 31 ,  73 ,  125 ,  0.8 );*/
+        }
+
+        div#imagen figure img{
+            width: 164px;
+            height: 164px;
+            border-radius: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <p>Hola soy contenido de div1</p>
+    </div>
+
+    <div id="imagen">
+        <figure>
+            <img src="08megan.png" alt="Hola"/>
+        </figure>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="normalize.css"/>
+    <style>
+        @-webkit-keyframes megan-hor{
+            from{
+                /*float:left;*/
+                /*border-radius:0 ;*/
+                /*left:0;*/
+                top:0;
+                border: 8px solid orangered;
+
+                /*background: blue;*/
+            }
+            to{
+                /*float: right;*/
+                /*border-radius: 50%;*/
+                /*left:8px;*/
+                top:8px;
+                border: 1px solid darkgray;
+                /*background: orangered;*/
+            }
+        }
+        @keyframes megan-hor{
+            from{
+                float:left;
+                border-radius:0 ;
+                left:0;
+
+                top:0;
+                border: 8px solid orangered;
+
+                background: blue;
+            }
+            to{
+                float: right;
+                border-radius: 50%;
+                left:8px;
+
+                top:8px;
+                border: 1px solid darkgray;
+
+                background: orangered;
+            }
+        }
+    figure{
+        border: 1px solid green;
+        height: 116px;
+    }
+    img{
+        vertical-align: middle;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        /*top:8px;*/
+        border-radius: 100px;
+        border: 8px solid darkgray;
+
+        /* Aplicar la animación ..*/
+        -webkit-animation:megan-hor 1s ease-in-out infinite alternate; /* Esto hace la animación*/
+
+
+
+        animation:megan-hor 2s ease-out infinite alternate;
+
+    }
+    div{
+        position: relative;
+        border: 1px solid red;
+        width: 100px;
+        height: 200px;
+        /*-webkit-animation:megan-hor 2s ease infinite;*/
+    }
+    </style>
+</head>
+<body>
+<figure>
+<img src="08megan.png" alt="Megan"/>
+    <img src="08megan.png" alt="Amor"/>
+    <img src="08megan.png" alt="Amor"/>
+    <img src="08megan.png" alt="Amor"/>
+    <img src="08megan.png" alt="Amor"/>
+    <img src="08megan.png" alt="Amor"/>
+</figure>
+<div>
+    Las animaciones van en pasos ... [from -> to] ó [from 25% 50% ... to]
+</div>
+</body>
+</html>

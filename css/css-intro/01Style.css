@@ -1,0 +1,9 @@
+@media screen and (max-width:420px){
+    body{
+        background-color: orangered !important;
+    }
+
+    h3{
+        color:dimgray;
+    }
+}

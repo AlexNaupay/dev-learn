@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Listas</title>
+    <style>
+        ul{
+            border:1px solid red;
+            padding: 0;
+            margin-left: 4em;
+        }
+        ul>li{
+            list-style-image:url("09rain.png");
+            list-style-position:outside;/* Fuera */
+        }
+        ul#ul2>li{
+            list-style-image:url("09rain.png");
+            list-style-position:inside;/* Dentro */
+        }
+        p{
+            display:list-item;
+        }
+    </style>
+</head>
+<body>
+<h3>Lista ordenada</h3>
+<ol>
+    <li>Megan</li>
+    <li>Paris</li>
+    <li>Lindsay</li>
+    <li>Rocío Gomez</li>
+</ol>
+
+<h3>Lista desordenada</h3>
+<ul>
+    <li>Uno</li>
+    <li>Dos</li>
+    <li>Tres</li>
+    <li>Cuatro</li>
+</ul>
+
+<ul id="ul2">
+    <li>Uno</li>
+    <li>Dos</li>
+    <li>Tres</li>
+    <li>Cuatro</li>
+</ul>
+
+<h3>&#60;p&#62; como list-item → Siempre y cuando esté en una lista</h3>
+
+<p>Pasiones comunes</p>
+<ol>
+    <p>Fútbol</p>
+    <p>Canto</p>
+    <p>Pesca</p>
+</ol>
+</body>
+</html>
