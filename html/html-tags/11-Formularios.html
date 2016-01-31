@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<h2>Formulario</h2>
+	<form action="vacio.html" method='GET'>
+		<label for="texto">Texto: </label>
+		<input id='texto'
+			   name='texto'
+			   placeholder='texto'
+			   maxlength='5'
+			   size='3'
+			   /><br/>
+
+		<label for="pass">Password</label>
+		<input type="password" id="pass" name='pass'>
+
+		<fieldset>
+			<legend>Opciones por Elegir</legend>
+				<!--  Radio Buttons -->
+				<br/><label for="r1">Radio1 </label><input type="radio" id="r1" name="radio" value='radio1' checked>
+				<br/><label for="r2">Radio2 </label><input type="radio" id="r2" name="radio" value='radio2'>
+				<br/><label for="r3">Radio3 </label><input type="radio" id="r3" name="radio" value='radio3'><br/>
+
+				<!-- checkBox -->
+				<br><label for="c1">Checkbox1</label><input type="checkbox" id="c1" name="check" value='check1' checked>
+				<br><label for="c2">Checkbox2</label><input type="checkbox" id="c2" name="check" value='check2' checked>
+				<br><label for="c3">Checkbox3</label><input type="checkbox" id="c3" name="check" value='check3'>
+
+		</fieldset>
+
+		<!-- cuadro combinado -->
+		<br/>
+		<label for="select_pais">País: </label><select name="pais" id="select_pais">
+			<optgroup label="América del Sur">
+				<option value="peru">Perú</option>
+				<option value="arge">Argentina</option>
+				<option value="boli">Bolivia</option>
+			</optgroup>
+			<optgroup label="Europa">
+				<option value="espa">España</option>
+				<option value="fran">Francia</option>
+				<option value="gran">Gran bretaña</option>
+			</optgroup>
+		</select>
+
+		<!-- Seleccionar Archivo -->
+		<br/> <label for="fil">Archivo</label><input id='fil' type="file"/>
+
+		<!-- area de texto -->
+		<textarea name="aret"cols="50" rows="5" placeholder='Comentario'></textarea>
+
+		<!-- Botones -->
+		<br/><br/><input type="submit" value='Enviar'/>
+		<br/><input type="reset"/>
+		<br/><input type="button" value='Botón común'/>
+	</form>
+</body>
+</html>

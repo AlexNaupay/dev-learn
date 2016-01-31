@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios con HTML5</title>
+</head>
+<body>
+	<h2>Lo nuevo en HTML5</h2>
+
+	<form action="">
+		<label for="number">number: </label>
+		<input min=5 max=10 id="number" value=7 step=2 type="number">
+		<label for="email"></label>
+		<input type="email" id="email" placeholder='email' required>
+		<input type="url" placeholder='url'>
+
+
+		<input type="date">
+		<input type="time">
+		<input type="datetime">
+		<input type="month" value='5'/>
+		<input type="search">
+		<input type="tel">
+		<input type="range" min=5 max=15>
+		<input type="color">
+		<br><br>
+		<label for="texto">Ingresa:</label> <input id='texto' type="text" list='lista'>
+		<datalist id='lista'>
+			<option value="Alex">Alex</option>
+			<option value="Adrian">Adrian</option>
+			<option value="Ariel">Ariel</option>
+			<option value="Kimberly">Kimberly</option>
+		</datalist>
+		<br/>
+		<input type="text"   pattern="[A-Z]{3}" placeholder='Tres letras mayúsculas'/>
+		<input type="submit">
+	</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Cambas de HTML5</title>
+</head>
+<body>
+	<h2>Canvas de HTML5</h2>
+	<canvas id='canvas' width='800px'></canvas>
+
+	<script language='javascript'>
+		var canvas=document.getElementById('canvas');
+		var contexto=canvas.getContext('2d');
+		contexto.lineWindth=1;
+		for(var i=0;i<800;i+=20){
+			contexto.moveTo(0,0);
+			contexto.lineTo(i,200);
+			contexto.stroke();
+		}
+	</script>
+</body>
+</html>

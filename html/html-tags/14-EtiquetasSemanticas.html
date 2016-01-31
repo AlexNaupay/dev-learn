@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevas Etiquetas Semánticas</title>
+    <style>
+        header{
+            border: solid 2px peru;
+        }
+        footer{
+            border: solid 2px greenyellow;
+        }
+        section{
+            border: 3px solid #e84a00;
+        }
+        article{
+            border: 3px solid aqua;
+        }
+        hgroup{
+            border: 2px solid blueviolet;
+        }
+        nav{
+            border: 3px solid blue;
+            float:left;
+        }
+        nav li{
+            display: inline;
+
+        }
+        nav ul{
+            border-left: 1px solid red;
+            padding-left: 0px;
+            margin: 5px;
+            display:block;
+        }
+        nav a{
+            border-top: 1px solid gray;
+            border-right: 1px solid gray;
+            border-bottom: 1px solid gray;
+            color: orangered;
+            text-decoration: none;
+            font-weight: bold;
+            display:block;
+            float:left
+
+        }
+        nav a:hover{
+            border-bottom: 3px solid peru;
+            background-color: cadetblue;
+        }
+		.clear{
+			clear:both;
+		}
+
+		img{
+			padding-left: 0px;
+		}
+		figure{
+			border:3px solid orangered;
+			padding-left: 0px;
+		}
+    </style>
+</head>
+<body>
+    <header >
+        <nav>
+            <ul>
+                <li><a href="">Enlace 1</a></li>
+                <li><a href="">Enlace 2</a></li>
+                <li><a href="">Enlace 3</a></li>
+                <li class="clear"></li>
+            </ul>
+        </nav>
+        <hgroup >
+            <h1>Nuevas Etiquetas Semánticas</h1>
+            <h2>Etiquetas propias de HTML 5</h2>
+        </hgroup>
+    </header>
+
+    <section>
+        <article>
+            <header>
+                <hgroup>
+                    <h2>Título de Artículo</h2>
+                    <h3>Subtitulo de Artículo</h3>
+                </hgroup>
+            </header>
+            <footer>
+                <h3>Este es el pie del artículo</h3>
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <hgroup>
+                    <h2>Título de Artículo</h2>
+                    <h3>Subtitulo de Artículo</h3>
+                </hgroup>
+            </header>
+            <footer>
+                <h3>Este es el pie del artículo</h3>
+            </footer>
+        </article>
+    </section>
+
+    <section>
+        <figure>
+            <figcaption>Figure: Título: Alex - Foto</figcaption>
+            <img src="img/alex.jpg" width="150px" alt="Alex"/>
+        </figure>
+    </section>
+
+	<footer>
+		<h3>Autor: Alex Naupay</h3>
+		<p>Teléfono: 182873123</p>
+		<p>Nacionalidad: peruano</p>
+	</footer>
+</body>
+</html>
