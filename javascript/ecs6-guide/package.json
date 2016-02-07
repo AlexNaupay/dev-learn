@@ -1,0 +1,16 @@
+{
+  "name": "ecs6-guide",
+  "description": "Guia de las nuevas funcionalidades de ECS6",
+  "author": "alexh",
+  "version": "0.0.1",
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0"
+  },
+  "scripts": {
+    "babel": "NODE_PATH=. babel --watch --presets [ es2015 ] src/index.js -o app.js",
+    "build": "NODE_PATH=. browserify -t [ babelify --presets [ es2015 ] ] src/index.js > app.js"
+  }
+}

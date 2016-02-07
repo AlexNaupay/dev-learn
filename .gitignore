@@ -32,7 +32,7 @@ Servers/
 /**/*.classpath
 /**/*.idea/
 /**/*.svn/
-
+/**/node_modules/
 # Intellij
 *.iws
 
