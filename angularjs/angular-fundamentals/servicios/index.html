@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios</title>
+</head>
+<body ng-app="app">
+<h1>constant y value</h1>
+    <!-- service: constant -->
+    <div ng-controller="ConstantController">
+        app.constant(name, objectValue); => {{ valor }}
+    </div>
+
+    <!-- service: value -->
+    <div ng-controller="ValueController">
+        app.value(name, value); => {{ valor }}
+    </div>
+
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

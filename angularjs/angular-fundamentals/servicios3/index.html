@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios</title>
+</head>
+<body ng-app="app">
+<h1> factory cripto </h1>
+    <!-- service: factory -->
+    <div ng-controller="FactoryController">
+        <input type="text" ng-model="password">
+        <br>
+        <input type="password" value="{{password}}">
+
+        <p>{{resultado}}</p>
+        <p>SHA-1: {{resultado()}}</p>
+        <p>SHA-1: {{resultado_()}}</p>
+        <p>MD5: {{resultado2()}}</p>
+        <p>SHA-2-256: {{resultado3()}}</p>
+        <p>SHA-2-512: {{resultado4()}}</p>
+    </div>
+
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src="../node_modules/crypto-js/crypto-js.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

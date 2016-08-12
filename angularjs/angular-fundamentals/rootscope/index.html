@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios</title>
+</head>
+<body ng-app="app">
+
+    <div ng-controller="ControlController">
+        <p>{{ appName }}</p>
+    </div>
+
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script>
+        var app = angular.module('app', []);
+
+        app.value('appName', 'My App');  // service:value appName
+
+        app.run(['$rootScope', 'appName', function($rootScope, appName){
+            $rootScope.appName = appName;
+        }]);
+
+        app.controller('ControlController', ['$scope', function($scope){
+            //$scope.appName = 'Alex App';
+        }])
+
+    </script>
+</body>
+</html>

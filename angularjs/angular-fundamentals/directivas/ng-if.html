@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios</title>
+</head>
+<body ng-app="app">
+    <input type="checkbox" ng-model="showNombre">¿Mostrar nombre?
+    <br>
+    Nombre: <input ng-model="nombre" >
+
+
+    <div ng-if="showNombre">
+        Nombre: <input ng-model="nombre" >
+        <br>
+        El valor de "nombre" en el $scope del "ng-if" es : {{nombre}}
+    </div>
+    El valor de "nombre" en el $scope del "Controlador" es : <strong>{{nombre}}</strong>
+<script src="../node_modules/angular/angular.min.js"></script>
+    <script>
+        var app = angular.module("app", []);
+
+        app.controller("PruebaController", function($scope) {
+            $scope.nombre="Carlos";
+            $scope.showNombre=true;
+
+
+            $scope.modelo={
+                apellido:"Perez",
+                showApellido:true,
+
+                nombre: "Carlos",
+                showNombre: true
+            }
+
+        });
+    </script>
+</body>
+</html>

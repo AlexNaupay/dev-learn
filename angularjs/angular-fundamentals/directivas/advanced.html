@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advance directive</title>
+</head>
+<body ng-app="app">
+
+
+<div ng-controller="ControlController">
+    <custom-directive date-model="date"></custom-directive>
+
+    <p>{{ date.prev }}</p>
+    <p>{{ date.next }}</p>
+    <p>{{text}}</p>
+    <p>{{username}}</p>
+
+    <p><input type="text" ng-model="date.prev"></p>
+    <p><input type="text" ng-model="date.next"></p>
+
+</div>
+
+
+
+
+<!-- Angular después de jquery -->
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src="advanced.js"></script>
+</body>
+</html>

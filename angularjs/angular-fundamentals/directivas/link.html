@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Directivas link</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/css/smoothness/jquery-ui-1.10.0.custom.min.css" />
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/jquery-ui.js"></script>
+
+    <!-- Angular después de jquery -->
+    <script src="../node_modules/angular/angular.min.js"></script>
+</head>
+<body ng-app="app">
+    <div ng-controller="ControlController">
+        <input id="date"
+               name="date"
+               type="text"
+               ng-model="data.date"
+               ca-datepicker="dd/mm/yy"
+        />
+        <p>: <span ng-bind="data.date"></span>:</p>
+    </div>
+
+    <script>
+        (function(){
+            var app = angular.module('app', []);
+            app.directive('caDatepicker', [function() {
+                return {
+                    restrict: 'A',
+                    link: function($scope, iElement, attributes) {
+                        console.log("link se ejecuta antes ..");
+                        debugger;
+                        iElement.datepicker({
+                            dateFormat: attributes.caDatepicker,
+                            onSelect: function() {
+                                $(this).trigger('change');
+                            }
+                        });
+                    }
+                };
+            }]);
+
+
+            app.controller('ControlController',['$scope', function($scope){
+                $scope.data = {
+                    date : ''
+                }
+            }]);
+
+
+
+
+        })()
+    </script>
+
+</body>
+</html>
